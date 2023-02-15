@@ -1,0 +1,10 @@
+extends layout
+block content 
+    h2 There are #{students.length} students.  
+
+    ul
+        each student in students
+            li= student.name
+                p #{student.name} is a member of #{student.groups[0].name}.
+    
+    a(href=`//localhost:3000/students`) Kseniya 

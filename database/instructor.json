@@ -1,0 +1,33 @@
+[[
+  "1",
+  "2",
+  "3"
+],{
+  "id": "4",
+  "name": "5",
+  "courses": "6"
+},{
+  "id": "7",
+  "name": "8",
+  "courses": "9"
+},{
+  "id": "10",
+  "name": "11",
+  "courses": "12"
+},"98f462d1-a2de-40e4-b7f1-264eafeb8f02","R. Martin Chavez",[
+  "13"
+],"fdd2af18-7886-42fd-b716-78f5d526fa11","Jeffrey Conn",[],"ca88e36d-2cee-451e-ac81-7d220810ac69","Robert",[
+  "14"
+],{
+  "name": "15",
+  "subject": "16",
+  "instructors": "17"
+},{
+  "name": "18",
+  "instructors": "19"
+},"How Software Ate Finance","Finance",[
+  "1",
+  "2"
+],"Financial Markets",[
+  "3"
+]]

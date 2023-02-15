@@ -1,0 +1,47 @@
+@startuml
+
+class Student {
+    + name: String
+    + friends: Array[]
+    + group: Group
+    + sendFriendRequest()
+    + acceptFriendRequest()
+    + rejectFriendRequest()
+    + form()
+    + join()
+    + quit()
+
+}
+
+class Instructor {
+    + name: String
+    + courses: Array[]
+    + create()
+    + collaborate()
+}
+
+
+class Group {
+    + name: String
+    + members: Array[]
+    + enrollments: Array[]
+    + enroll() 
+}
+
+class Course {
+    + name: String
+    + subject: String
+    + instructors: Array[]
+}
+
+class Enrollment {
+    + drop()
+    + cancel()
+}
+
+Student *-- Group
+Instructor -- Course
+Group -> Course
+(Group, Course) -- Enrollment
+
+@enduml
