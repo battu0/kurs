@@ -1,50 +1,42 @@
-const studentDatabase = require("./database/student-database");
-const instructorDatabase = require("./database/instructor-database");
-const Instructor = require("./models/instructor");
-const Student = require("./models/student");
-const { printGroupMembers, printEnrollmentHistory } = require('./lib/printGroupInfo');
+const courseDatabase = require('./database/course-database');
+const groupDatabase = require('./database/group-database');
+const Course = require('./models/course');
+const Group = require('./models/group');
 
-const kseniya = Student.create({'name': 'Kseniya'});
-const michael = Student.create({'name': 'Michael'});
-const megan   = Student.create({'name': 'Megan',});
-const batu    = Student.create({'name': 'Batu'});
-const batuhan = Student.create({'name': 'Batuhan'});
-const merve   = Student.create({'name': 'Merve'});
-const buse    = Student.create({'name': 'Buse'});
+const printAllEnrollment = require('./lib/printAllEnrollment');
 
-const marty   = Instructor.create({'name': 'R. Martin Chavez'});
-const jeff    = Instructor.create({'name': 'Jeffrey Conn'});
+const kedi = Group.create({name: 'Kedi'});
+const fare = Group.create({name: 'Fare'});
+
+const howSoftwareAteFinance = Course.create({name: 'How Software Ate Finance', subject: 'Finance', instructors: ['R. Martin Chavez', 'Jeffrey Conn']});
+const financialMarkets = Course.create({name: 'Financial Markets', subject: 'Finance', instructors: ['Robert Shiller']});
+const learningHowToLearn = Course.create({name: 'Learning How To Learn', subject: 'Personal Development', instructors: ['Barbara Oakley', 'Dr. Terrence Sejnowski']});
+
+
+kedi.enroll(howSoftwareAteFinance);
+kedi.enroll(financialMarkets);
+kedi.enroll(learningHowToLearn);
+fare.enroll(learningHowToLearn);
+
+// printMembers(kedi);
+// printEnrollment(kedi);
+
 
 async function main() {
+    try {
+        await groupDatabase.save([kedi, fare]);
+        
+        await courseDatabase.save([howSoftwareAteFinance, financialMarkets, learningHowToLearn]);
 
-    const grizzlies = batu.form('Grizzlies');
-    batuhan.join(grizzlies);
+        const tilki = Group.create({name: 'Tilki'});
 
-    const candy = merve.form('Candy');
-    buse.join(candy);
-    
-    const cat = kseniya.form("Cat");
-    michael.join(cat);
-    megan.join(cat);
+        await groupDatabase.insert(tilki)
+        const groups = await groupDatabase.load()
+        groups.forEach(printAllEnrollment)
 
-    const howSoftwareAteFinance = marty.create("How Software Ate Finance", 'Finance');
-    marty.collaborate(jeff, howSoftwareAteFinance);
-
-    const robert = Instructor.create({"name": "Robert"})
-    await instructorDatabase.insert(robert);
-    const financialMarkets = robert.create("Financial Markets");
-    
-
-    const jack = Student.create({'name': 'Jack'})
-    jack.join(cat);
-
-    printGroupMembers(cat);
-    
-    cat.enroll(howSoftwareAteFinance);
-    printEnrollmentHistory(cat);
-
-    await studentDatabase.save([kseniya, michael, megan, jack, batu, batuhan, merve, buse])
-    await instructorDatabase.save([marty, jeff, robert])
+    } catch(e) {
+        return console.log(e);
+    }
 }
 
 main()
