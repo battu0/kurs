@@ -7,8 +7,8 @@ class Group {
         this.enrollments = enrollments;
     }
 
-    enroll(course) {
-        const enrollment = new Enrollment(this, course);
+    enroll(course, enrollmentDate) {
+        const enrollment = new Enrollment(this, course, enrollmentDate);
         this.enrollments.push(enrollment);
     }
 

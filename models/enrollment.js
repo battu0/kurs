@@ -1,7 +1,8 @@
 class Enrollment {
-    constructor(group, course) { 
+    constructor(group, course, enrollmentDate) { 
         this.group = group;
         this.course = course;
+        this.enrollmentDate = enrollmentDate;
     }
 
     drop(group, course) {
