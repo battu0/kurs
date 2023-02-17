@@ -1,7 +1,9 @@
+const uuid = require('uuid')
 const Enrollment = require('./enrollment');
 
 class Group {
-    constructor(name, members = [], enrollments = []) {
+    constructor(id = uuid.v4(), name, members = [], enrollments = []) {
+        this.id = id;
         this.name = name;
         this.members = members;
         this.enrollments = enrollments;
@@ -12,8 +14,8 @@ class Group {
         this.enrollments.push(enrollment);
     }
 
-    static create({name, members, enrollments}) {
-        return new Group(name, members, enrollments)
+    static create({id, name, members, enrollments}) {
+        return new Group(id, name, members, enrollments)
     }
 }
 
