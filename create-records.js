@@ -13,10 +13,10 @@ const financialMarkets = Course.create({name: 'Financial Markets', subject: 'Fin
 const learningHowToLearn = Course.create({name: 'Learning How To Learn', subject: 'Personal Development', instructors: ['Barbara Oakley', 'Dr. Terrence Sejnowski']});
 
 
-kedi.enroll(howSoftwareAteFinance);
-kedi.enroll(financialMarkets);
-kedi.enroll(learningHowToLearn);
-fare.enroll(learningHowToLearn);
+kedi.enroll(howSoftwareAteFinance, 'February 14, 2022');
+kedi.enroll(financialMarkets, 'February 7, 2022');
+kedi.enroll(learningHowToLearn, 'January 14, 2022');
+fare.enroll(learningHowToLearn, 'January 14, 2022');
 
 // printMembers(kedi);
 // printEnrollment(kedi);
