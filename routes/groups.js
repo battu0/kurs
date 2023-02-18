@@ -10,9 +10,8 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const student = Group.create(req.body)
-    await studentDatabase.insert(student)
-    res.send(student)
+    const group = await groupDatabase.insert(req.body)
+    res.send(group)
 })
 
 router.get('/:studentId', async (req, res) => {
