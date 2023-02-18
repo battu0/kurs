@@ -1,0 +1,8 @@
+extends layout
+block content 
+    h2 Groups 
+    p There are #{groups.length} groups in the system.
+    ul 
+        each group in groups 
+            li
+                a(href=`/groups/${group.id}`) #{group.name}

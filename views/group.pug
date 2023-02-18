@@ -1,0 +1,10 @@
+extends layout 
+block content 
+    h3 #{group.name}
+    ul
+        each member in group.members
+            li #{member.name}
+    h3 Enrollments 
+        ul 
+            each enrollment in group.enrollments
+                li #{group.name} has enrolled #{enrollment.course.name}
