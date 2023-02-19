@@ -1,13 +1,16 @@
+const uuid = require('uuid')
+
 class Course {
-    constructor(name, subject, instructors, enrollees = []) {
+    constructor(id = uuid.v4() ,name, subject, instructors, enrollees = []) {
+        this.id = id;
         this.name = name;
         this.subject = subject;
         this.instructors = instructors;
         this.enrollees = enrollees;
     }
 
-    static create({name, subject, instructors, enrollees}) {
-        return new Course(name, subject, instructors, enrollees)
+    static create({id, name, subject, instructors, enrollees}) {
+        return new Course(id, name, subject, instructors, enrollees)
     }
 }
 

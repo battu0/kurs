@@ -3,26 +3,29 @@
   "2",
   "3"
 ],{
-  "name": "4",
-  "subject": "5",
-  "instructors": "6",
-  "enrollees": "7"
+  "id": "4",
+  "name": "5",
+  "subject": "6",
+  "instructors": "7",
+  "enrollees": "8"
 },{
-  "name": "8",
-  "subject": "5",
-  "instructors": "9",
-  "enrollees": "10"
+  "id": "9",
+  "name": "10",
+  "subject": "6",
+  "instructors": "11",
+  "enrollees": "12"
 },{
-  "name": "11",
-  "subject": "12",
-  "instructors": "13",
-  "enrollees": "14"
-},"How Software Ate Finance","Finance",[
-  "15",
-  "16"
-],[],"Financial Markets",[
-  "17"
-],[],"Learning How To Learn","Personal Development",[
+  "id": "13",
+  "name": "14",
+  "subject": "15",
+  "instructors": "16",
+  "enrollees": "17"
+},"5f67bec3-0755-4d4e-b880-f1b9a92cb52a","How Software Ate Finance","Finance",[
   "18",
   "19"
+],[],"968e9042-f770-4c45-bf67-f4202eb62810","Financial Markets",[
+  "20"
+],[],"c2ec1738-1037-4ddf-9081-d5d2ab3b3a45","Learning How To Learn","Personal Development",[
+  "21",
+  "22"
 ],[],"R. Martin Chavez","Jeffrey Conn","Robert Shiller","Barbara Oakley","Dr. Terrence Sejnowski"]
