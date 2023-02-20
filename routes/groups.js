@@ -1,6 +1,7 @@
 const groupDatabase = require('../database/group-database');
 const Group = require('../models/group');
 const flatted  = require('flatted');
+const courseDatabase = require('../database/course-database');
 
 const router = require('express').Router()
 
@@ -21,7 +22,18 @@ router.get('/:groupId', async (req, res) => {
 })
 
 router.delete('/:groupId', async (req, res) => {
-    groupDatabase.removeBy('id', req.params.groupId)
+    await groupDatabase.removeBy('id', req.params.groupId)
+    res.send('OK')
+})
+
+router.post('/:groupId/courses', async (req, res) => {
+    const {courseId, enrollmentDate} = req.body
+    const {groupId} = req.params
+    const course = await courseDatabase.find(courseId)
+    const group = await groupDatabase.find(groupId)
+    group.enroll(course, enrollmentDate)
+    await groupDatabase.update(group)
+    res.send('OK')
 })
 
 module.exports = router;
