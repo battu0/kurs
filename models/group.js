@@ -8,7 +8,7 @@ const GroupSchema = new mongoose.Schema({
     enrollments: []
 })
 
-const Group = mongoose.model(GroupSchema, 'Group')
+module.exports = mongoose.model('Group', GroupSchema)
 // class Group {
 //     constructor(id = uuid.v4(), name, members = [], enrollments = []) {
 //         this.id = id;
@@ -27,4 +27,4 @@ const Group = mongoose.model(GroupSchema, 'Group')
 //     }
 // }
 
-module.exports = Group;
+// module.exports = Group;

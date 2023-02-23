@@ -22,7 +22,7 @@ router.get('/:groupId', async (req, res) => {
 })
 
 router.delete('/:groupId', async (req, res) => {
-    await groupDatabase.removeBy('id', req.params.groupId)
+    await groupDatabase.removeBy('_id' ,req.params.groupId)
     res.send('OK')
 })
 
@@ -34,6 +34,12 @@ router.post('/:groupId/courses', async (req, res) => {
     group.enroll(course, enrollmentDate)
     await groupDatabase.update(group)
     res.send('OK')
+})
+
+router.patch('/:groupId', async (req, res) => {
+    const { groupId } = req.params
+    const { name } = req.body
+    await groupDatabase.update(groupId, { name })
 })
 
 module.exports = router;
