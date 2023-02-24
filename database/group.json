@@ -17,59 +17,76 @@
   "name": "13",
   "members": "14",
   "enrollments": "15"
-},"53e3d21d-2379-467e-b0bf-4aa3b69d9e33","Kedi",[],[
+},"1e7f5d36-7bfb-42c5-b38c-25ab186e5fdb","Kedi",[],[
   "16",
   "17",
   "18"
-],"c3456c07-1bb8-438c-ba0f-856e81693363","Fare",[],[
+],"0d2103b0-063b-41f9-ba76-dcf7bb5dcc65","Fare",[],[
   "19"
-],"c9ad1b22-6718-4257-aff4-6085994f8948","Tilki",[],[],{
-  "group": "20",
-  "course": "21",
-  "enrollmentDate": "22"
+],"f9fbdb95-c9a3-4f17-8983-8ef4a511ce85","Tilki",[],[
+  "20"
+],{
+  "group": "21",
+  "course": "22",
+  "enrollmentDate": "23"
 },{
-  "group": "20",
-  "course": "23",
-  "enrollmentDate": "24"
+  "group": "21",
+  "course": "24",
+  "enrollmentDate": "25"
 },{
-  "group": "20",
-  "course": "25",
-  "enrollmentDate": "26"
+  "group": "21",
+  "course": "26",
+  "enrollmentDate": "27"
 },{
-  "group": "27",
-  "course": "25",
-  "enrollmentDate": "28"
+  "group": "28",
+  "course": "26",
+  "enrollmentDate": "29"
+},{
+  "group": "3",
+  "course": "30",
+  "enrollmentDate": "31"
 },{
   "id": "4",
   "name": "5",
   "members": "6",
   "enrollments": "7"
 },{
-  "name": "29",
-  "subject": "30",
-  "instructors": "31",
-  "enrollees": "32"
-},"February 14, 2022",{
+  "id": "32",
   "name": "33",
-  "subject": "30",
-  "instructors": "34",
-  "enrollees": "35"
+  "subject": "34",
+  "instructors": "35",
+  "enrollees": "36"
+},"February 14, 2022",{
+  "id": "37",
+  "name": "38",
+  "subject": "34",
+  "instructors": "39",
+  "enrollees": "40"
 },"February 7, 2022",{
-  "name": "36",
-  "subject": "37",
-  "instructors": "38",
-  "enrollees": "39"
+  "id": "41",
+  "name": "42",
+  "subject": "43",
+  "instructors": "44",
+  "enrollees": "45"
 },"January 14, 2022",{
   "id": "8",
   "name": "9",
   "members": "10",
   "enrollments": "11"
-},"January 18, 2022","How Software Ate Finance","Finance",[
-  "40",
-  "41"
-],[],"Financial Markets",[
-  "42"
-],[],"Learning How To Learn","Personal Development",[
-  "43",
-  "44"
+},"January 18, 2022",{
+  "id": "37",
+  "name": "38",
+  "subject": "34",
+  "instructors": "46",
+  "enrollees": "47"
+},"February 10, 2022","46108614-d9d8-49bc-98e1-626af7f43098","How Software Ate Finance","Finance",[
+  "48",
+  "49"
+],[],"f2b4ce78-fb12-4019-96e9-f47f122a5196","Financial Markets",[
+  "50"
+],[],"e3b1e9f6-87e9-4290-ab8e-9af1d548177a","Learning How To Learn","Personal Development",[
+  "51",
+  "52"
+],[],[
+  "50"
 ],[],"R. Martin Chavez","Jeffrey Conn","Robert Shiller","Barbara Oakley","Dr. Terrence Sejnowski"]
