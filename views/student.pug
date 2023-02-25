@@ -1,0 +1,16 @@
+extends layout 
+block content 
+    h2 #{student.name}
+    h3 Friends
+    if student.friends.length
+        ul
+            each friend in student.friends 
+                li #{friend.name}
+    else
+        p #{student.name} has no friends.
+    if student.groups.length
+        p #{student.name} is a member of #{student.groups[-1]}
+            each group in student.groups 
+                li #{group.name}
+    else 
+        p #{student.name} hasn't been a member of or has formed a group thus far.

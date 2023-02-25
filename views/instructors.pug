@@ -1,0 +1,8 @@
+extends layout
+block content 
+    h2 Instructors  
+    p There are #{instructors.length} instructors in the system.
+    ul 
+        each instructor in instructors 
+            li
+                a(href=`/instructors/${instructor.id}`) #{instructor.name}

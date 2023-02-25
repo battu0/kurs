@@ -1,0 +1,10 @@
+extends layout 
+block content 
+    h3 #{instructor.name}
+    if instructor.courses.length
+        p Courses #{instructor.name} teaches
+            ul 
+                each course in instructor.courses 
+                    li #{course.name}
+    else
+        p #{instructor.name} has not taught in any course thus far.
