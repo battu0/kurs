@@ -1,13 +1,16 @@
 extends layout 
 block content 
     h3 #{group.name}
-    ul
-        each member in group.members
-            li #{member.name}
+    if group.members.length
+        ul
+            each member in group.members
+                li #{member.name}
+    else 
+        p #{group.name} has no members so far
     h3 Enrollments
     if group.enrollments.length 
         ul 
             each enrollment in group.enrollments
-                li #{group.name} has enrolled #{enrollment.course.name}
+                li #{enrollment.group.name} has enrolled #{enrollment.course.name}
     else 
         p No enrollments

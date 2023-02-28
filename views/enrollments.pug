@@ -1,0 +1,14 @@
+extends layout 
+block content 
+    h2 Enrollments
+    p There are #{enrollments.length} enrollments.
+
+    ol 
+        each enrollment in enrollments 
+            li
+                p Group:
+                    a(href=`/groups/${enrollment.group.id}`) #{enrollment.group.name}
+                p Course:
+                    a(href=`/courses/${enrollment.course.id}`) #{enrollment.course.name}
+                p Enrollment Date: #{enrollment.enrollmentDate}
+

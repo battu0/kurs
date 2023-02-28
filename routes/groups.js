@@ -1,5 +1,5 @@
 const groupService = require('../service/group-service');
-const courseService = require('../service/course-service');
+const enrollmentService = require('../service/enrollment-service');
 
 const router = require('express').Router()
 
@@ -9,8 +9,12 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const group = await groupService.insert(req.body)
-    res.send(group)
+    try {
+        const group = await groupService.insert(req.body)
+        res.send(group)
+    } catch(e) {
+        next(e)
+    }
 })
 
 router.get('/:groupId', async (req, res) => {
@@ -27,11 +31,8 @@ router.delete('/:groupId', async (req, res) => {
 router.post('/:groupId/courses', async (req, res) => {
     const {courseId, enrollmentDate} = req.body
     const {groupId} = req.params
-    const course = await courseService.find(courseId)
-    const group = await groupService.find(groupId)
-    group.enroll(course, enrollmentDate)
-    await groupService.update(group)
-    res.send('OK')
+    const enrollment = await enrollmentService.enroll(groupId, courseId, enrollmentDate)
+    res.send(enrollment)
 })
 
 router.patch('/:groupId', async (req, res) => {

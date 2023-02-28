@@ -1,0 +1,92 @@
+[[
+  "1",
+  "2",
+  "3"
+],{
+  "id": "4",
+  "name": "5",
+  "members": "6",
+  "enrollments": "7"
+},{
+  "id": "8",
+  "name": "9",
+  "members": "10",
+  "enrollments": "11"
+},{
+  "id": "12",
+  "name": "13",
+  "members": "14",
+  "enrollments": "15"
+},"1e7f5d36-7bfb-42c5-b38c-25ab186e5fdb","Kedi",[],[
+  "16",
+  "17",
+  "18"
+],"0d2103b0-063b-41f9-ba76-dcf7bb5dcc65","Fare",[],[
+  "19"
+],"f9fbdb95-c9a3-4f17-8983-8ef4a511ce85","Tilki",[],[
+  "20"
+],{
+  "group": "21",
+  "course": "22",
+  "enrollmentDate": "23"
+},{
+  "group": "21",
+  "course": "24",
+  "enrollmentDate": "25"
+},{
+  "group": "21",
+  "course": "26",
+  "enrollmentDate": "27"
+},{
+  "group": "28",
+  "course": "26",
+  "enrollmentDate": "29"
+},{
+  "group": "3",
+  "course": "30",
+  "enrollmentDate": "31"
+},{
+  "id": "4",
+  "name": "5",
+  "members": "6",
+  "enrollments": "7"
+},{
+  "id": "32",
+  "name": "33",
+  "subject": "34",
+  "instructors": "35",
+  "enrollees": "36"
+},"February 14, 2022",{
+  "id": "37",
+  "name": "38",
+  "subject": "34",
+  "instructors": "39",
+  "enrollees": "40"
+},"February 7, 2022",{
+  "id": "41",
+  "name": "42",
+  "subject": "43",
+  "instructors": "44",
+  "enrollees": "45"
+},"January 14, 2022",{
+  "id": "8",
+  "name": "9",
+  "members": "10",
+  "enrollments": "11"
+},"January 18, 2022",{
+  "id": "37",
+  "name": "38",
+  "subject": "34",
+  "instructors": "46",
+  "enrollees": "47"
+},"February 10, 2022","46108614-d9d8-49bc-98e1-626af7f43098","How Software Ate Finance","Finance",[
+  "48",
+  "49"
+],[],"f2b4ce78-fb12-4019-96e9-f47f122a5196","Financial Markets",[
+  "50"
+],[],"e3b1e9f6-87e9-4290-ab8e-9af1d548177a","Learning How To Learn","Personal Development",[
+  "51",
+  "52"
+],[],[
+  "50"
+],[],"R. Martin Chavez","Jeffrey Conn","Robert Shiller","Barbara Oakley","Dr. Terrence Sejnowski"]

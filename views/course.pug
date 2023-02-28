@@ -1,0 +1,8 @@
+extends layout 
+block content 
+    h3 #{course.name}
+    ul
+        each instructor in course.instructors
+            li #{instructor.name}
+    h3 Subject 
+    p #{course.subject}
