@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/coursegrp', 
+mongoose.connect('mongodb://localhost/kurs', 
     () => {
         console.log('connected to MongoDB')
     },

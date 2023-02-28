@@ -1,5 +1,5 @@
-const courseDatabase = require('./database/course-database');
-const groupDatabase = require('./database/group-database');
+const courseService = require('./service/course-service');
+const groupService = require('./service/group-service');
 const Course = require('./models/course');
 const Group = require('./models/group');
 
@@ -24,14 +24,14 @@ fare.enroll(learningHowToLearn, 'January 18, 2022');
 
 async function main() {
     try {
-        await groupDatabase.save([kedi, fare]);
+        await groupService.save([kedi, fare]);
         
-        await courseDatabase.save([howSoftwareAteFinance, financialMarkets, learningHowToLearn]);
+        await courseService.save([howSoftwareAteFinance, financialMarkets, learningHowToLearn]);
 
         const tilki = Group.create({name: 'Tilki'});
 
-        await groupDatabase.insert(tilki)
-        const groups = await groupDatabase.load()
+        await groupService.insert(tilki)
+        const groups = await groupService.load()
         groups.forEach(printAllEnrollment)
 
     } catch(e) {

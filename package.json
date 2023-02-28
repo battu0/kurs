@@ -17,6 +17,7 @@
     "flatted": "^3.2.7",
     "fs": "^0.0.1-security",
     "mongoose": "^6.9.1",
+    "mongoose-autopopulate": "^0.17.1",
     "pug": "^3.0.2",
     "uuid": "^9.0.0"
   },

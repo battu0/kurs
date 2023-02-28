@@ -3,14 +3,10 @@
 class Student {
     + name: String
     + friends: Array[]
-    + group: Group
-    + sendFriendRequest()
-    + acceptFriendRequest()
-    + rejectFriendRequest()
+    + groups: Array[]
     + form()
     + join()
     + quit()
-
 }
 
 class Instructor {
@@ -23,6 +19,7 @@ class Instructor {
 
 class Group {
     + name: String
+    + goal: String
     + members: Array[]
     + enrollments: Array[]
     + enroll() 

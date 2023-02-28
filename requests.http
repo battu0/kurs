@@ -1,0 +1,51 @@
+POST http://localhost:3""000/groups HTTP/1.1
+content-type: application/json
+
+{"name":"new client to mongodb"}
+
+###
+GET http://localhost:3000/groups/63f9bd763a0ed2b6597e0f70 HTTP/1.1
+
+###
+
+DELETE http://localhost:3000/groups/63f9bd763a0ed2b6597e0f70 HTTP/1.1
+
+###
+POST http://localhost:3000/groups/63f9bd763a0ed2b6597e0f70/courses HTTP/1.1
+Content-Type: application/json
+
+{"courseId": "63f9d5459b3a0056d9d97cfe", "enrollmentDate": "27 February, 2022"}
+
+###
+POST http://localhost:3000/courses HTTP/1.1
+Content-Type: application/json
+
+{"name": "brand new course", "subject": "Physics"}
+
+###
+GET http://localhost:3000/courses/63f9d5459b3a0056d9d97cfe HTTP/1.1
+
+###
+DELETE http://localhost:3000/courses/63f9d4562f67f31f9a96dad0 HTTP/1.1
+
+###
+POST http://localhost:3000/students HTTP/1.1
+Content-Type: application/json
+
+{"name": "new student"}
+###
+GET http://localhost:3000/students/63f9e5e281ae720cdaa183e5 HTTP/1.1
+
+###
+DELETE http://localhost:3000/students/63f9e5e281ae720cdaa183e5 HTTP/1.1
+
+###
+POST http://localhost:3000/instructors HTTP/1.1
+Content-Type: application/json
+
+{"name": "new instructor"}
+###
+GET http://localhost:3000/instructors/63f9ec89b708101dff2ef189 HTTP/1.1
+
+###
+DELETE http://localhost:3000/instructors/63f9ec89b708101dff2ef189 HTTP/1.1
